@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade prática 1</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--navbar do bottstrap-->
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">🌾 Fórmula Grão</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#principal">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Grãos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <!--seção inicial-->
+        <section class="principal" id="principal">
+            <header>
+                <h1>Fórmula Grão</h1>
+                <h2>A Melhor empresa para adquirir o <strong>seu grão</strong></h2>
+                <p>
+                    Com a bagagem de sermos a empresa mais veterana e sólida do mercado (desde 1200), transformamos
+                    tradição em
+                    eficiência operacional diária. Nosso compromisso vai além da comercialização: garantimos a
+                    originação e a entrega pontual do seu grão com segurança jurídica e logística blindada,
+                    independentemente dos desafios do cenário. Escolher a nossa marca significa confiar o seu suprimento
+                    a quem conhece profundamente a terra, domina o escoamento e cumpre rigorosamente cada contrato
+                    assinado de geração em geração.
+                </p>
+            </header>
+        </section>
+        <!--seção de produtos (Cards)-->
+        <section class="produtos" id="produtos">
+            <div class="row">
+                <!--Card 1-->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">🌾 Arroz Premium</h5>
+                            <p class="card-text">
+                                Arroz selecionado, ideal para restaurantes e mercados.
+                                Alta qualidade e excelente rendimento.
+                            </p>
+                            <h6>R$ 29,90</h6>
+                            <button type="button" class="btn btn-success">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 2-->
+                <div class="col-md-4">
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">🌱 Grão Misterioso</h5>
+
+                            <p class="card-text">
+                                Grão composto por elementos não conferidos, ideal em grande quantidade nas
+                                plantações.
+                            </p>
+
+                            <h6>R$ 59,90</h6>
+
+                            <button type="button" class="btn btn-success">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">🫘⭐ Feijão Mágico de João</h5>
+
+                            <p class="card-text">
+                                Incrível grão místico, quando plantado cresce a uma altura imensurável.
+                            </p>
+
+                            <h6>R$ 1.000.001,90</h6>
+
+                            <button type="button" class="btn btn-success" onclick="feijaoMagico()">
+                                Compre se puder
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--seção sobre-->
+        <section class="sobre" id="sobre">
+            <h2>Sobre a Fórmula Grão</h2>
+            <p>
+                Há séculos fornecendo grãos de qualidade para agricultores,
+                comerciantes e consumidores, a Fórmula Grão une tradição,
+                inovação e compromisso em cada entrega.
+
+                Nosso objetivo é oferecer produtos selecionados,
+                atendimento de excelência e uma logística eficiente,
+                garantindo confiança do plantio até a sua mesa.
+            </p>
+        </section>
+        <!--seção contato com formulário-->
+        <section class="contato" id="contato">
+            <h2>Fale Conosco</h2>
+            <form id="formContato">
+                <div class="mb-3">
+
+                    <label for="nome" class="form-label">
+                        Nome
+                    </label>
+
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="mb-3">
+
+                    <label for="email" class="form-label">
+                        E-mail
+                    </label>
+
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+
+                </div>
+                <div class="mb-3">
+
+                    <label for="mensagem" class="form-label">
+                        Mensagem
+                    </label>
+
+                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+
+                </div>
+
+                <button type="submit" class="btn btn-success">
+                    Enviar
+                </button>
+
+            </form>
+        </section>
+    </main>
+    <!--Rodapé Básico-->
+    <footer>
+        © 2026 Fórmula Grão
+
+        Telefone
+
+        E-mail
+
+        Redes sociais
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Meu JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
